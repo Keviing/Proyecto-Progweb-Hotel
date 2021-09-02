@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>reserva</title>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <!--Menú de opciones -->
+   <header>        
+  </header>
+  <!-- Fin de menú de opciones -->
+  <main class="container">
+    <div class="py-5 text-center">        
+      <h2>Nueva variedad</h2>
+      <p class="lead">Registro de una nueva variedad que la florícola va a disponer para el cultivo y exportación.</p>
+      <div class="input-group mb-3">
+        <input id="txtBuscar" type="text" class="form-control" placeholder="Buscar por nombre o id" aria-label="Buscar por nombre o id" aria-describedby="button-addon2">
+        <button id="btnBuscar" class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <img width="95%" src="https://c.pxhere.com/photos/2b/ee/rosa_plant_red_flower_petals_red_rose_garden_pink_flower-1209714.jpg!d" srcset="https://c.pxhere.com/photos/2b/ee/rosa_plant_red_flower_petals_red_rose_garden_pink_flower-1209714.jpg!d" alt="naturaleza, planta, flor, pétalo, Rosa, verde, rojo, jardín, flora, invernadero, Rosa roja, de cerca, Pétalos, Rosa, belleza, flor rosa, Fotografía macro, planta floreciendo, Rosas de jardín, Familia rosa, Tallo de la planta, Planta de tierra, Fotos gratis In PxHere">
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Registro de variedad</h4>
+        <hr class="my-4">
+        <form method="GET" action="servicio-list.html" id="frmCliente" class="needs-validation" novalidate>
+          <input type="hidden" id="txtIdCliente">
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="txtNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese un nombre" required>
+              <div class="invalid-feedback">
+                Debe ingresar un nombre .
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="txtCedula" class="form-label">Cedula</label>
+              <input type="text" class="form-control" id="txtCedula" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Debe ingresar un cedula.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="txtCiudad" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="txtCiudad" placeholder="" value="">                
+            </div>
+            
+           
+
+            <div class="col-sm-4">
+              <label for="txtEdad" class="form-label">Edad</label>
+              <input type="number" value="10" min="1" class="form-control" id="txtEdad">                
+            </div>
+
+          </div>         
+          <hr class="my-4">       
+          <button type="submit" class="w-100 btn btn-success btn-lg">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+    <footer>
+    </footer>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/servicio.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Clientes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        </header>
+
+       <main>
+        <section class="py-5 container">
+          <div id="divEjemplo"></div>
+          <h3>Listado de Clientes</h3>
+          <hr>
+          <table class="table">
+            <thead>
+              <tr>                
+                <th scope="col">Nombre</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Edad</th>
+                <th scope="col">
+                  <a href="servicio.html" class="btn btn-success">nuevo</a>
+                </th>   
+              </tr>
+            </thead>
+            <tbody id="tblClientes">              
+            </tbody>                        
+          </table>
+
+        <!-- Modal Consultar-->
+        <div class="modal fade" id="mdCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="lblNombre"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">               
+                    <label>Cedula:</label>
+                    <span id="spCedula"></span><br>
+                    <label>Ciudad:</label>
+                    <span id="spCiudad"></span><br>
+                    <label>Edad:</label>
+                    <span id="spEdad"></span><br>               
+                    <input type="hidden" id="txtIdCliente"> <!-- Es un control que contiene el valor del ID de la variedad consultada -->                    
+              </div>
+              <div class="modal-footer">
+                <button id="btnEliminar" type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </section>      
+    </main>
+    <footer></footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/servicio-list.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
